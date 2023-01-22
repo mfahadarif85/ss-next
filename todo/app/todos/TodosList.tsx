@@ -13,9 +13,6 @@ const TodosList = async () => {
   return (
     <>
       <div>
-        <h1>Todos</h1>
-      </div>
-      <div>
         {todos.map((todo) => (
           <p key={todo.id}>
             <Link href={`/todos/${todo.id}`}>Todo: {todo.id}</Link>
